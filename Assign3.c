@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 int main ()
-{  
-  int a,b;
-  printf("please Enter number a:");
-  scanf("%d",&a);
-  
-  printf("please Enter number b:");
-  scanf(" %d",&b);
-   
-  printf("a+b= %d \n", a+b);
-  printf("a-b= %d \n", a-b);
-  printf("a&b= %d \n", a&b);
-  printf("a|b= %d \n", a|b);
-  printf("a^b= %d \n", a^b);
- 
- 
+{    int x, y, z ;
+     printf("Enter Number 1:");
+      scanf("%d",&x );
+	  
+	 printf("Enter Number 2:");
+     scanf("%d",&y );
+	  
+	 printf("Enter Number 3:");
+     scanf("%d",&z );
+	 
+	((x>y)&&(x>z)) ? (printf("Maximum number is %d",x)) :\
+	((z>y)&&(z>x)) ?( printf("Maximum number is %d",z)):\
+	( printf("Maximum number is %d",y)); 
+	 
 }
